@@ -1,0 +1,7 @@
+"sample"
+{
+	"base"		"nutscript"
+	"title"		"NS: Theatre of Pain"
+	"author"	"Pablo J. Martínez"
+	"menusystem" "1"
+}
