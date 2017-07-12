@@ -174,7 +174,7 @@ end
 nut.command.add("addlootposition", {
 	adminOnly = true,
 	onRun = function(client, arguments)
-        if(client:SteamID() == "STEAM_0:1:15609326" or client:SteamID() == "STEAM_0:0:27107057" or client:SteamID() == "STEAM_0:0:22624838") then
+        --if(client:SteamID() == "STEAM_0:1:15609326" or client:SteamID() == "STEAM_0:0:27107057" or client:SteamID() == "STEAM_0:0:22624838") then
             if(SERVER) then
                 local newposition = client:GetPos()
                 LootPositions = nut.data.get("LootPositions", nil, false, false)
@@ -187,7 +187,7 @@ nut.command.add("addlootposition", {
                 end
                 client:notify("You successfully added a new loot position.")
             end
-        else return "You can't use this!" end
+        --else return "You can't use this!" end
     end
 })
 
@@ -195,20 +195,20 @@ nut.command.add("addlootposition", {
 nut.command.add("clearlootpositions", {
 	adminOnly = true,
 	onRun = function( client, arguments )
-        if(client:SteamID() == "STEAM_0:1:15609326" or client:SteamID() == "STEAM_0:0:27107057" or client:SteamID() == "STEAM_0:0:22624838") then
+        --if(client:SteamID() == "STEAM_0:1:15609326" or client:SteamID() == "STEAM_0:0:27107057" or client:SteamID() == "STEAM_0:0:22624838") then
             if(SERVER) then
                 LootPositions = {}
                 nut.data.set("LootPositions", nil, false, false)
                 client:notify("You successfully cleared all loot positions.")
             end
-        end
+        --end
     end
 })
 
 nut.command.add("reanimateloottimer", {
 	adminOnly = true,
 	onRun = function( client, arguments )
-        if(client:SteamID() == "STEAM_0:1:15609326" or client:SteamID() == "STEAM_0:0:27107057" or client:SteamID() == "STEAM_0:0:22624838") then
+        --if(client:SteamID() == "STEAM_0:1:15609326" or client:SteamID() == "STEAM_0:0:27107057" or client:SteamID() == "STEAM_0:0:22624838") then
             if(SERVER) then
                 Food = {}
                 HealthItems = {}
@@ -254,7 +254,7 @@ nut.command.add("reanimateloottimer", {
                 end
                 client:notify("You successfully reanimated the loot timer.")
             end
-        end
+        --end
     end
 })
 

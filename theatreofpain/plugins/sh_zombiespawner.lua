@@ -88,7 +88,7 @@ end
 nut.command.add("addzombiespawn", {
 	adminOnly = true,
 	onRun = function(client, arguments)
-        if(client:SteamID() == "STEAM_0:1:15609326" or client:SteamID() == "STEAM_0:0:27107057" or client:SteamID() == "STEAM_0:0:22624838") then
+        --if(client:SteamID() == "STEAM_0:1:15609326" or client:SteamID() == "STEAM_0:0:27107057" or client:SteamID() == "STEAM_0:0:22624838") then
             if(SERVER) then
                 local newposition = client:GetPos()
                 ZombieSpawns = nut.data.get("ZombieSpawns", nil, false, false)
@@ -103,20 +103,20 @@ nut.command.add("addzombiespawn", {
                 end
                 client:notify("You successfully added a new zombie spawn position.")
             end
-        else return "You can't use this!" end
+        --else return "You can't use this!" end
     end
 })
 
 nut.command.add("clearzombiespawns", {
 	adminOnly = true,
 	onRun = function( client, arguments )
-        if(client:SteamID() == "STEAM_0:1:15609326" or client:SteamID() == "STEAM_0:0:27107057" or client:SteamID() == "STEAM_0:0:22624838") then
+        --if(client:SteamID() == "STEAM_0:1:15609326" or client:SteamID() == "STEAM_0:0:27107057" or client:SteamID() == "STEAM_0:0:22624838") then
             if(SERVER) then
                 ZombieSpawns = {}
                 nut.data.set("ZombieSpawns", nil, false, false)
                 client:notify("You successfully cleared all zombie spawns.")
             end
-        end
+        --end
     end
 })
 
