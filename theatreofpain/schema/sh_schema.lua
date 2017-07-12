@@ -11,7 +11,7 @@ nut.util.include("commands/sh_commands.lua")
 nut.util.include("commands/sh_zombiecommands.lua")
 
 SCHEMA.name = "Theatre of Pain"
-SCHEMA.author = "CTCCoco"
+SCHEMA.author = "Pablo J. Martínez"
 SCHEMA.desc = "Everything must go on"
 SCHEMA.uniqueID = "theatreofpain" -- SCHEMA will be a unique identifier stored in the database.
 -- Using a uniqueID will allow for renaming the schema folder.
